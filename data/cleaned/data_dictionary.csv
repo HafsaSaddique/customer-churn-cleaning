@@ -1,0 +1,22 @@
+column_name,data_type,description
+customer_id,object,Unique customer identifier
+gender,object,Customer gender
+senior_citizen,int64,Whether customer is a senior citizen (0 or 1)
+partner,object,Whether customer has a partner
+dependents,object,Whether customer has dependents
+tenure,int64,Number of months the customer has stayed
+phone_service,object,Whether customer has phone service
+multiple_lines,object,Whether customer has multiple phone lines
+internet_service,object,Customer internet service type
+online_security,object,Whether customer has online security
+online_backup,object,Whether customer has online backup
+device_protection,object,Whether customer has device protection
+tech_support,object,Whether customer has technical support
+streaming_tv,object,Whether customer has streaming TV
+streaming_movies,object,Whether customer has streaming movies
+contract,object,Customer contract type
+paperless_billing,object,Whether customer uses paperless billing
+payment_method,object,Customer payment method
+monthly_charge,float64,Monthly customer charge
+total_charge,float64,Total customer charges
+churn_flag,int64,"Customer churn indicator: 1 = Yes, 0 = No"
