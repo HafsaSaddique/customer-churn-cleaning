@@ -128,3 +128,59 @@ This project uses a telecom customer churn dataset to demonstrate customer-reten
 
 Python, pandas, NumPy, data cleaning, CSV processing, and documentation.
 
+## Task 2: Exploratory Data Analysis (EDA)
+
+### Objective
+Performed exploratory data analysis on the cleaned IBM Telco Customer Churn dataset to identify customer behavior patterns and factors associated with churn.
+
+### Tools and Libraries
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+### Analysis Performed
+- Dataset overview and summary statistics
+- Customer churn distribution
+- Customer tenure analysis
+- Monthly charges analysis
+- Correlation analysis
+- Churn analysis by contract type
+- Churn analysis by internet service
+- Churn analysis by payment method
+- Churn analysis by technical support
+- Churn analysis by online security
+
+### Visualizations
+All five visualizations are available in `outputs/plots/`:
+
+1. `01_customer_tenure_histogram.png`
+2. `02_churn_distribution.png`
+3. `03_monthly_charges_boxplot.png`
+4. `04_correlation_heatmap.png`
+5. `05_tenure_vs_total_charges.png`
+
+### Reports
+- EDA Notebook: `notebooks/customer_churn_eda.ipynb`
+- Insights Report: `reports/eda_insights.md`
+- PDF Report: `reports/customer_churn_eda_report.pdf`
+
+### Key Findings
+- Overall customer churn rate: 26.54%.
+- Month-to-month contract customers have a 42.71% churn rate.
+- Electronic check users have a 45.29% churn rate.
+- Customers with 0-12 months of tenure have a 47.44% churn rate.
+- Customers with 49-72 months of tenure have a 9.51% churn rate.
+
+### Dataset Note
+The analysis uses the IBM Telco Customer Churn dataset. It represents telecommunications customers and is used as a simulated customer-retention case study, not actual boutique transaction data.
+
+## Limitations
+
+This project uses a telecommunications customer churn dataset to demonstrate customer-retention analysis in a simulated boutique context. It does not contain real boutique purchases, products, or sales transactions. The 11 blank `TotalCharges` values were estimated using monthly charges multiplied by tenure. EDA findings describe associations and should not be interpreted as proof of causation.
+
+## Skills
+
+Python, pandas, NumPy, data cleaning, exploratory data analysis, data visualization, Jupyter Notebook, CSV processing, and documentation.
