@@ -48,13 +48,13 @@ The dataset contains 7,043 customer records and 21 original columns.
 
 
 
-\- `data/cleaned/cleaned\_customer\_churn.csv` — cleaned customer dataset.
+\- `data/cleaned/cleaned\_customer\_churn.csv` ??? cleaned customer dataset.
 
-\- `data/cleaned/data\_dictionary.csv` — column names, data types, and descriptions.
+\- `data/cleaned/data\_dictionary.csv` ??? column names, data types, and descriptions.
 
-\- `clean\_data.py` — data cleaning script.
+\- `clean\_data.py` ??? data cleaning script.
 
-\- `inspect\_dataset.py` — initial dataset inspection script.
+\- `inspect\_dataset.py` ??? initial dataset inspection script.
 
 
 
@@ -184,3 +184,79 @@ This project uses a telecommunications customer churn dataset to demonstrate cus
 ## Skills
 
 Python, pandas, NumPy, data cleaning, exploratory data analysis, data visualization, Jupyter Notebook, CSV processing, and documentation.
+
+---
+
+## Task 3: Baseline Logistic Regression Churn Model
+
+### Objective
+Build a baseline Machine Learning model to predict whether a customer is likely to leave (churn) using Logistic Regression.
+
+### Dataset
+- Input: `data/cleaned/cleaned_customer_churn.csv`
+- Target variable: `churn_flag`
+- 0 = Customer stays
+- 1 = Customer churns
+- Customer ID was excluded from model training.
+
+### Data Preprocessing
+- Numerical features: Median imputation and StandardScaler.
+- Categorical features: Most-frequent imputation and OneHotEncoder.
+- Used a Scikit-learn Pipeline and ColumnTransformer.
+- Split the dataset into 80% training and 20% testing.
+- Used stratified sampling to preserve the churn distribution.
+
+### Model Performance
+
+| Metric | Result |
+|---|---:|
+| ROC-AUC | 0.8421 |
+| Accuracy | 80.55% |
+| Precision | 65.72% |
+| Recall | 55.88% |
+| F1-score | 60.40% |
+
+The baseline model achieved the required ROC-AUC target of at least 0.70.
+
+### Evaluation
+- ROC curve and ROC-AUC score.
+- Confusion matrix.
+- Accuracy, precision, recall, and F1-score.
+
+### Task 3 Files
+- Training script: `task3_logistic_regression/train_model.py`
+- Data inspection: `task3_logistic_regression/inspect_data.py`
+- Evaluation script: `task3_logistic_regression/evaluate_model.py`
+- Saved model: `task3_logistic_regression/models/logistic_regression_model.pkl`
+- Metrics: `task3_logistic_regression/outputs/metrics.csv`
+- ROC curve: `task3_logistic_regression/outputs/roc_curve.png`
+- Confusion matrix: `task3_logistic_regression/outputs/confusion_matrix.png`
+- Detailed documentation: `task3_logistic_regression/README.md`
+
+### How to Run Task 3
+
+Install dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Train the model:
+
+```bash
+python task3_logistic_regression/train_model.py
+```
+
+Evaluate the model:
+
+```bash
+python task3_logistic_regression/evaluate_model.py
+```
+
+### Limitations
+This is a baseline Logistic Regression model. Its recall is 55.88%, meaning some actual churn customers are not detected. Further improvements could include threshold tuning, class weighting, and comparing additional classification algorithms.
+
+The dataset is the IBM Telco Customer Churn dataset and represents a simulated customer-retention case study, not actual boutique transaction data.
+
+### Skills
+Logistic Regression, Scikit-learn, Machine Learning pipelines, feature preprocessing, train-test splitting, classification metrics, ROC-AUC, model evaluation, and model persistence.
