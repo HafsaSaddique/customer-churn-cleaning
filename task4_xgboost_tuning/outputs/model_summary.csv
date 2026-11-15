@@ -1,0 +1,2 @@
+best_cv_auc,test_auc,best_parameters
+0.8501892268888358,0.8480818414322251,"{'classifier__colsample_bytree': 0.8, 'classifier__learning_rate': 0.05, 'classifier__max_depth': 3, 'classifier__n_estimators': 100, 'classifier__subsample': 0.8}"
