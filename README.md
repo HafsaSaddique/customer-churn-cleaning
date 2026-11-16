@@ -260,3 +260,56 @@ The dataset is the IBM Telco Customer Churn dataset and represents a simulated c
 
 ### Skills
 Logistic Regression, Scikit-learn, Machine Learning pipelines, feature preprocessing, train-test splitting, classification metrics, ROC-AUC, model evaluation, and model persistence.
+---
+
+## Task 4: XGBoost Hyperparameter Tuning and Quality Review
+
+### Objective
+Improved the baseline Logistic Regression churn prediction model using XGBoost, 5-fold StratifiedKFold cross-validation, and GridSearchCV hyperparameter tuning.
+
+### Methodology
+- Used an 80/20 stratified train-test split.
+- Applied numerical median imputation and scaling.
+- Applied categorical imputation and OneHotEncoder.
+- Tested 8 hyperparameter combinations using 5-fold cross-validation.
+- Selected the best model based on ROC-AUC.
+
+### Model Performance
+
+| Metric | Result |
+|---|---:|
+| Best CV ROC-AUC | 0.8502 |
+| Test ROC-AUC | 0.8481 |
+| Test Accuracy | 80.77% |
+| Test Recall | 52.41% |
+| Baseline Logistic Regression ROC-AUC | 0.8421 |
+
+The tuned XGBoost model achieved a higher mean cross-validation ROC-AUC than the baseline model.
+
+### Quality and Security Review
+- Evaluated model performance across gender and senior citizen subgroups.
+- Identified subgroup performance differences requiring further investigation.
+- Documented model assumptions, limitations, and performance trade-offs.
+- Included security recommendations for model files and customer data.
+
+### Task 4 Files
+- Training script: `task4_xgboost_tuning/train_xgboost.py`
+- Plotting script: `task4_xgboost_tuning/plot_cv_results.py`
+- Quality review script: `task4_xgboost_tuning/quality_review.py`
+- Saved model: `task4_xgboost_tuning/models/best_xgboost_model.pkl`
+- CV results: `task4_xgboost_tuning/outputs/cv_results.csv`
+- CV plot: `task4_xgboost_tuning/outputs/cv_results_plot.png`
+- Subgroup checks: `task4_xgboost_tuning/outputs/subgroup_bias_checks.csv`
+- PDF report: `task4_xgboost_tuning/reports/xgboost_quality_review.pdf`
+- Detailed documentation: `task4_xgboost_tuning/README.md`
+
+### How to Run Task 4
+
+```bash
+python task4_xgboost_tuning/train_xgboost.py
+python task4_xgboost_tuning/plot_cv_results.py
+python task4_xgboost_tuning/quality_review.py
+```
+
+### Dataset Note
+The IBM Telco Customer Churn dataset is used as a simulated customer-retention case study, not actual boutique transaction data.
