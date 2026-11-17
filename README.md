@@ -313,3 +313,41 @@ python task4_xgboost_tuning/quality_review.py
 
 ### Dataset Note
 The IBM Telco Customer Churn dataset is used as a simulated customer-retention case study, not actual boutique transaction data.
+## Task 5: Customer Churn Intelligence Dashboard
+
+### Objective
+
+Developed an interactive Streamlit dashboard using the tuned XGBoost model from Task 4 to explore customer churn risk, visualize important model features, and support customer-retention decisions.
+
+### Dashboard Features
+
+- Interactive Overview with customer KPIs and churn visualizations.
+- Top 10 high-risk customers table.
+- Customer filters and CSV downloads.
+- XGBoost feature importance visualization.
+- Historical churn pattern analysis.
+- Business recommendations for customer retention.
+
+### Technologies
+
+Python, Streamlit, Pandas, Matplotlib, Scikit-learn, XGBoost, and Joblib.
+
+### Project Files
+
+- Application: `task5_streamlit_dashboard/app.py`
+- Dashboard documentation: `task5_streamlit_dashboard/README.md`
+- Handover document: `task5_streamlit_dashboard/reports/handover_note.md`
+
+### Run Dashboard
+
+```bash
+python -m streamlit run task5_streamlit_dashboard/app.py
+```
+
+### Live Dashboard
+
+https://hafsasaddique-customer-chur-task5-streamlit-dashboardapp-48yove.streamlit.app/
+
+### Dataset Note
+
+This project uses the public IBM Telco Customer Churn dataset as a simulated telecom retention case study, not actual boutique transaction data. Predictions on historical records are demonstration scores, not validated forecasts of future customer behaviour.
