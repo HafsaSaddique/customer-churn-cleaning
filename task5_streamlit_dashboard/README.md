@@ -1,4 +1,4 @@
-# Customer Churn Intelligence Dashboard
+﻿# Customer Churn Intelligence Dashboard
 
 ## Project Overview
 
@@ -41,22 +41,22 @@ The project uses the public IBM Telco Customer Churn dataset as a simulated tele
 
 ```text
 customer-churn-cleaning/
-│
-├── data/
-│   └── cleaned/
-│       └── cleaned_customer_churn.csv
-│
-├── task4_xgboost_tuning/
-│   └── models/
-│       └── best_xgboost_model.pkl
-│
-├── task5_streamlit_dashboard/
-│   ├── app.py
-│   ├── README.md
-│   ├── outputs/
-│   └── reports/
-│
-└── requirements.txt
+â”‚
+â”œâ”€â”€ data/
+â”‚   â””â”€â”€ cleaned/
+â”‚       â””â”€â”€ cleaned_customer_churn.csv
+â”‚
+â”œâ”€â”€ task4_xgboost_tuning/
+â”‚   â””â”€â”€ models/
+â”‚       â””â”€â”€ best_xgboost_model.pkl
+â”‚
+â”œâ”€â”€ task5_streamlit_dashboard/
+â”‚   â”œâ”€â”€ app.py
+â”‚   â”œâ”€â”€ README.md
+â”‚   â”œâ”€â”€ outputs/
+â”‚   â””â”€â”€ reports/
+â”‚
+â””â”€â”€ requirements.txt
 ```
 
 ## Run Locally
@@ -118,7 +118,7 @@ The application is designed for deployment through Streamlit Community Cloud.
 
 `requirements.txt`
 
-**Live Dashboard:** To be added after successful deployment.
+**Live Dashboard:** https://hafsasaddique-customer-chur-task5-streamlit-dashboardapp-48yove.streamlit.app/
 
 ---
 

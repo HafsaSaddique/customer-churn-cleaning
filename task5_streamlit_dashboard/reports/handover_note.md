@@ -1,4 +1,4 @@
-# Customer Churn Intelligence Dashboard
+﻿# Customer Churn Intelligence Dashboard
 ## Project Handover Document
 
 ### 1. Project Information
@@ -89,7 +89,7 @@ The application is intended for deployment through Streamlit Community Cloud.
 - GitHub repository: `https://github.com/HafsaSaddique/customer-churn-cleaning`
 - Main file: `task5_streamlit_dashboard/app.py`
 - Dependencies: `requirements.txt`
-- Live application URL: To be added after successful deployment.
+- Live application URL: https://hafsasaddique-customer-chur-task5-streamlit-dashboardapp-48yove.streamlit.app/
 
 ### 9. Limitations
 
